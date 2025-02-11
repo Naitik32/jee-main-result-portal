@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JEE Main 2025 Result Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>JEE Main 2025 Session 1 Result</h1>
+      <p>Enter your credentials to view your result</p>
+    </header>
+
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="rollNumber">Roll Number:</label>
+        <input type="text" id="rollNumber" name="rollNumber" required>
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+
+      <div class="form-group">
+        <label for="captcha">Enter Captcha:</label>
+        <input type="text" id="captcha" name="captcha" required>
+        <div class="captcha-box">ABCD12</div>
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <div id="result" class="result-container">
+      <h2>Result Details</h2>
+      <p><strong>Name:</strong> <span id="resultName"></span></p>
+      <p><strong>Roll Number:</strong> <span id="resultRollNumber"></span></p>
+      <p><strong>Date of Birth:</strong> <span id="resultDOB"></span></p>
+      <p><strong>Total Score:</strong> <span id="resultScore"></span></p>
+      <p><strong>Rank:</strong> <span id="resultRank"></span></p>
+      <p><strong>Status:</strong> <span id="resultStatus"></span></p>
+
+      <h3>Subject-Wise Marks and Percentile</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+            <th>Percentile</th>
+          </tr>
+        </thead>
+        <tbody id="subjectMarksTable">
+          <!-- Rows will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Examination Services. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
